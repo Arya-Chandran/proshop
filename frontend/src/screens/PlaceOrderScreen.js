@@ -109,7 +109,7 @@ const PlaceOrderScreen = ({ history }) => {
         <Col md={4}>
           {' '}
           <Card>
-            <listGroup variant='flush'>
+            <ListGroup variant='flush'>
               <ListGroup.Item>
                 <h2>Order Summary</h2>
               </ListGroup.Item>
@@ -142,7 +142,7 @@ const PlaceOrderScreen = ({ history }) => {
                   Place Order
                 </Button>
               </ListGroup.Item>
-            </listGroup>
+            </ListGroup>
           </Card>
         </Col>
       </Row>
