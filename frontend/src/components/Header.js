@@ -41,6 +41,25 @@ const Header = () => {
                   <i className='fas fa-user'></i>Sign In
                 </Nav.Link>
               )}
+              {userInfo && userInfo.isAdmin && (
+                <NavDropdown title='Admin' id='adminmenu'>
+                  <Nav.Link>
+                    <NavDropdown.Item as={Link} to='/admin/userlist'>
+                      Users
+                    </NavDropdown.Item>
+                  </Nav.Link>
+                  <Nav.Link>
+                    <NavDropdown.Item as={Link} to='/admin/productlist'>
+                      Products
+                    </NavDropdown.Item>
+                  </Nav.Link>
+                  <Nav.Link>
+                    <NavDropdown.Item as={Link} to='/admin/orderlist'>
+                      Orders
+                    </NavDropdown.Item>
+                  </Nav.Link>
+                </NavDropdown>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>
