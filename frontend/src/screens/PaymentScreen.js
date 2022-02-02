@@ -8,7 +8,7 @@ import CheckoutSteps from '../components/CheckoutSteps'
 const PaymentScreen = ({ history }) => {
   const cart = useSelector((state) => state.cart)
   const { shippingAddress } = cart
-  console.log('shippingAddress', shippingAddress)
+
   if (!shippingAddress) {
     history.push('/shipping')
   }
